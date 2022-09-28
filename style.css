@@ -1,0 +1,54 @@
+body{
+    overflow-x: hidden;
+}
+
+#normalText{
+    animation: 3s ease 2s forwards show-text; 
+    opacity: 0;
+    z-index: -1;
+}
+
+#normalText2{
+    animation: 3s ease 4s forwards show-text; 
+    opacity: 0;
+    z-index: -1;
+}
+
+#rollDown{
+    transform: translateX(-1200px);
+    animation: 3s ease 6s forwards show-text2;
+}
+
+.imageShow{
+    opacity: 0;
+    animation: 4s ease 5s forwards show-text;
+}
+
+.imageShow2{
+    opacity: 0;
+    animation: 4s ease 8s forwards show-text;
+}
+
+@keyframes show-text {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes show-text2 {
+    0%{
+        transform: translateX(-1200px);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(20px);
+    }
+}
